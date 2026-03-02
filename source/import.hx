@@ -1,5 +1,5 @@
 #if !macro
-#if !mobile
+#if desktop
 // Discord API
 import funkin.backend.DiscordClient;
 #end
