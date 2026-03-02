@@ -11,7 +11,6 @@ import sys.io.*;
 
 import funkin.backend.MusicBeatState;
 import funkin.backend.MusicBeatSubstate;
-import funkin.backend.FunkinRatioScaleMode;
 import funkin.backend.Conductor;
 import funkin.backend.BaseStage;
 import funkin.backend.Difficulty;
