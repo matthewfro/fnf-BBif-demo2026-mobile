@@ -1,8 +1,7 @@
 #if !macro
-#if desktop
+
 // Discord API
 import funkin.backend.DiscordClient;
-#end
 
 #if sys
 import sys.*;
