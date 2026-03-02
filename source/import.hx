@@ -23,7 +23,6 @@ import funkin.objects.Alphabet;
 import funkin.objects.BGSprite;
 
 import funkin.states.PlayState;
-import funkin.states.LoadingState;
 
 import mobile.backend.SUtil;
 
