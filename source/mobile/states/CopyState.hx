@@ -17,7 +17,7 @@ import sys.io.Process;
  * ...
  * @author: Karim Akra
  */
-class CopyState extends funkin.backend.MusicBeatState
+class CopyState extends MusicBeatState
 {
 	private static final textFilesExtensions:Array<String> = ['ini', 'txt', 'xml', 'hxs', 'hx', 'hxc', 'lua', 'json', 'frag', 'vert'];
 	public static final IGNORE_FOLDER_FILE_NAME:String = "CopyState-Ignore.txt";
@@ -204,6 +204,8 @@ class CopyState extends funkin.backend.MusicBeatState
 
 		// removes unwanted assets
 		var assets = locatedFiles.filter(folder -> folder.startsWith('assets/'));
+		var mods = locatedFiles.filter(folder -> folder.startsWith('mods/'));
+		locatedFiles = assets.concat(mods);
 		locatedFiles = locatedFiles.filter(file -> !FileSystem.exists(file));
 
 		var filesToRemove:Array<String> = [];
