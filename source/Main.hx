@@ -95,7 +95,7 @@ class Main extends Sprite
 		#end
 		*/
 		ClientPrefs.tryBindingSave('funkin');
-		addChild(new FNFGame(game.width, game.height, InitState, game.framerate, game.framerate, game.skipSplash, game.startFullscreen));
+		addChild(new FNFGame(game.width, game.height, #if (mobile && MODS_ALLOWED) CopyState.checkExistingFiles() ? InitState : CopyState #else InitState #end, game.framerate, game.framerate, game.skipSplash, game.startFullscreen));
 		
 		FPSCounter.init();
 		
